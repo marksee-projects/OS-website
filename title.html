@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynapseOS | Title Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="title.css">
+</head>
+<body class="title-page-body">
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="title-container">
+        <div class="title-header">
+            <h1 class="course-title">Final Term Presentation for ICSC0113</h1>
+            <h2 class="main-title">SynapseOS</h2>
+            <p class="subtitle">The Context-Aware, AI-Powered Operating System</p>
+        </div>
+
+        <div class="info-section-professor">
+            <div class="info-line">
+                <span class="info-label">Passed by:</span>
+                <span class="info-content">Group 5 - SynapseOS</span>
+            </div>
+            <div class="info-line">
+                <span class="info-label">Section:</span>
+                <span class="info-content">NW2D</span>
+            </div>
+            <div class="info-line">
+                <span class="info-label">Passed to:</span>
+                <span class="info-content">Irish Robert Kim M. Dajero</span>
+            </div>
+            <div class="info-line">
+                <span class="info-label">Passed on:</span>
+                <span class="info-content">Nov 13, 2025</span>
+            </div>
+        </div>
+
+        <div class="inspiration-box">
+            <h3 class="inspiration-title">Inspiration</h3>
+            <p class="inspiration-text">
+                In a world where users juggle multiple tasks, applications, and files, productivity often gets lost in clutter. SynapseOS was inspired by the way the human brain connects ideas seamlessly and intelligently. It's built to help creators, researchers, and students focus on thinking instead of organizing. SynapseOS acts as a digital extension of your thought process, learning what you work on and proactively connecting your tools, files, and web resources.
+            </p>
+        </div>
+
+        <div class="reason-box">
+            <h3 class="reason-title">Reason</h3>
+            <p class="reason-text">
+                A synapse is a junction between two nerve cells that allows the transmission of electrical or chemical signals essentially, it's how thoughts are formed and connected in the brain. This OS aims to be the "synapse" between your digital tools and your ideas, creating intelligent connections to enhance productivity and creativity.
+            </p>
+        </div>
+
+        <div class="button-container">
+            <a href="index.html" class="enter-button">Enter SynapseOS</a>
+        </div>
+    </div>
+
+    <script>
+        // Add a subtle typing effect to the title
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('.main-title');
+            const originalText = title.textContent;
+            title.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    title.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            // Start typing effect after a brief delay
+            setTimeout(typeWriter, 500);
+        });
+    </script>
+</body>
+</html>

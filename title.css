@@ -1,0 +1,307 @@
+/* Title Page Specific Styles */
+.title-page-body {
+    background: linear-gradient(135deg, #0f001f 0%, #1a0033 50%, #0f001f 100%);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Animated background particles */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(168, 85, 247, 0.3);
+    border-radius: 50%;
+    animation: float 15s infinite linear;
+}
+
+.particle:nth-child(1) { width: 20px; height: 20px; top: 10%; left: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { width: 15px; height: 15px; top: 60%; left: 80%; animation-delay: 2s; }
+.particle:nth-child(3) { width: 25px; height: 25px; top: 30%; left: 40%; animation-delay: 4s; }
+.particle:nth-child(4) { width: 10px; height: 10px; top: 80%; left: 10%; animation-delay: 6s; }
+.particle:nth-child(5) { width: 18px; height: 18px; top: 20%; left: 70%; animation-delay: 8s; }
+.particle:nth-child(6) { width: 12px; height: 12px; top: 50%; left: 30%; animation-delay: 10s; }
+.particle:nth-child(7) { width: 22px; height: 22px; top: 70%; left: 60%; animation-delay: 12s; }
+.particle:nth-child(8) { width: 16px; height: 16px; top: 40%; left: 90%; animation-delay: 14s; }
+.particle:nth-child(9) { width: 14px; height: 14px; top: 90%; left: 50%; animation-delay: 16s; }
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Professor's Format Styles */
+.title-container {
+    text-align: center;
+    max-width: 900px;
+    padding: 4rem 3rem;
+    animation: fadeIn 1.5s ease-out;
+    position: relative;
+    z-index: 1;
+    margin: 2rem;
+    background: transparent;
+    backdrop-filter: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.course-title {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #d1d5db;
+    font-style: italic;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Professor's format info section */
+.info-section-professor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #a855f7;
+    min-width: 120px;
+    text-align: right;
+}
+
+.info-content {
+    color: white;
+    text-align: left;
+    flex: 1;
+    font-weight: 500;
+}
+
+
+
+/* Box for Inspiration */
+
+.inspiration-box {
+    margin: 2rem auto 2rem auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    top: 150px; /* Adjust this value as needed */
+}
+
+.inspiration-title {
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.inspiration-text {
+    color: white;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Box for Reason */
+
+.reason-box {
+    margin: 2rem auto 2rem auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 800px;
+    position: relative;
+    top: 230px; /* Adjust this value as needed */
+}
+
+.reason-title {
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.reason-text {
+    color: white;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Button container for better spacing */
+.button-container {
+    margin-top: 20rem;
+    margin-bottom: 1rem;
+}
+
+/* Enter button */
+.enter-button {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: linear-gradient(45deg, #a855f7, #ec4899);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.enter-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.6);
+}
+
+.enter-button:active {
+    transform: translateY(1px);
+}
+
+.enter-button::after {
+    content: '';
+    position: absolute;
+    top: 10;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.enter-button:hover::after {
+    left: 100%;
+}
+
+/* Title page responsive */
+@media (max-width: 768px) {
+    .title-container {
+        padding: 3rem 2rem;
+        margin: 1rem;
+    }
+    
+    .course-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .info-section-professor {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .info-line {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .info-label {
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .inspiration-box,
+    .reason-box {
+        padding: 2rem;
+        margin: 3rem 1rem;
+    }
+    
+    .inspiration-title,
+    .reason-title {
+        font-size: 1.5rem;
+    }
+    
+    .inspiration-text,
+    .reason-text {
+        font-size: 1rem;
+    }
+    
+    .button-container {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .enter-button {
+        padding: 1rem 2.5rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Specifications - SynapseOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="architecture.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SynapseOS</div>
+        <ul class="nav-links">
+            <li><a href="title.html">Title Page</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="architecture.html" class="active">Architectures</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-header">
+            <div class="header-meta">
+                <span class="doc-version">Version 1.0</span>
+                <span class="doc-date">November 2025</span>
+            </div>
+            <h1>Technical Specifications</h1>
+            <p class="header-subtitle">Complete technical documentation of SynapseOS core systems, architecture, and hardware requirements</p>
+        </div>
+
+        <!-- System Architecture Overview -->
+        <section class="architecture-overview">
+            <h2>System Architecture Overview</h2>
+            <div class="arch-grid">
+                <div class="arch-item">
+                    <div class="arch-label">Kernel Version</div>
+                    <div class="arch-value">Linux 5.15+</div>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-label">Architecture</div>
+                    <div class="arch-value">x86-64</div>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-label">Address Space</div>
+                    <div class="arch-value">48-bit</div>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-label">Boot System</div>
+                    <div class="arch-value">UEFI</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- File Allocation System -->
+        <section class="spec-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>File Allocation System</h2>
+            </div>
+            
+            <div class="spec-content">
+                <div class="spec-subsection">
+                    <h3>Allocation Methods</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <td class="table-label">Primary Method</td>
+                            <td class="table-value">Indexed Allocation with B+ Trees</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Block Size</td>
+                            <td class="table-value">4KB with support for 2MB large files</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Journaling</td>
+                            <td class="table-value">Write-ahead logging (WAL)</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">File System</td>
+                            <td class="table-value">SynapseFS (Ext4-based with AI enhancements)</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-subsection">
+                    <h3>Storage Management Features</h3>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-title">Inode Structure</div>
+                            <div class="feature-desc">Extended inodes with AI metadata</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Block Allocation</div>
+                            <div class="feature-desc">Buddy system with predictive pre-allocation</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Defragmentation</div>
+                            <div class="feature-desc">Online, AI-optimized defragmentation</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Cache Strategy</div>
+                            <div class="feature-desc">Adaptive Replacement Cache (ARC)</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Compression</div>
+                            <div class="feature-desc">Transparent LZ4 compression for cold data</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Allocation System -->
+        <section class="spec-section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Memory Allocation System</h2>
+            </div>
+            
+            <div class="spec-content">
+                <div class="spec-subsection">
+                    <h3>Memory Management</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <td class="table-label">Allocation Strategy</td>
+                            <td class="table-value">Hybrid Buddy-Slab System</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Page Size</td>
+                            <td class="table-value">4KB, 2MB, 1GB (supports huge pages)</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Virtual Memory</td>
+                            <td class="table-value">48-bit address space (256TB)</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Swap Management</td>
+                            <td class="table-value">Compressed swap with zswap</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-subsection">
+                    <h3>Memory Architecture</h3>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-title">Kernel Space</div>
+                            <div class="feature-desc">1GB direct mapping with large pages</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">User Space</div>
+                            <div class="feature-desc">Per-process address spaces with ASLR</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Page Replacement</div>
+                            <div class="feature-desc">Enhanced LRU with AI frequency prediction</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Allocators</div>
+                            <div class="feature-desc">SLUB for kernel objects, jemalloc for user space</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Protection</div>
+                            <div class="feature-desc">Hardware-enforced NX bits and SMAP/SMEP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Requirements -->
+        <section class="spec-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Hardware Requirements</h2>
+            </div>
+            
+            <div class="spec-content">
+                <div class="requirements-container">
+                    <div class="req-column">
+                        <h3>Minimum Requirements</h3>
+                        <table class="spec-table">
+                            <tr>
+                                <td class="table-label">Processor</td>
+                                <td class="table-value">x86-64 CPU with SSE4.2</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Memory</td>
+                                <td class="table-value">4GB RAM (8GB recommended)</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Storage</td>
+                                <td class="table-value">20GB available space</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Graphics</td>
+                                <td class="table-value">OpenGL 3.3 capable GPU</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="req-column">
+                        <h3>Recommended Specifications</h3>
+                        <table class="spec-table">
+                            <tr>
+                                <td class="table-label">Processor</td>
+                                <td class="table-value">4+ cores with AVX2 support</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Memory</td>
+                                <td class="table-value">16GB DDR4 or higher</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Storage</td>
+                                <td class="table-value">NVMe SSD with 50GB+ free space</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Graphics</td>
+                                <td class="table-value">Dedicated GPU with Vulkan support</td>
+                            </tr>
+                            <tr>
+                                <td class="table-label">Networking</td>
+                                <td class="table-value">Gigabit Ethernet or Wi-Fi 6</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation">
+            <a href="index.html" class="btn primary">Back to Home</a>
+            <a href="features.html" class="btn secondary">View Features</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>SynapseOS - The Context-Aware, AI-Powered Operating System</p>
+            <p class="footer-note">Final Term Presentation for ICSC0113 | Group 5 - SynapseOS</p>
+        </div>
+    </footer>
+</body>
+</html>

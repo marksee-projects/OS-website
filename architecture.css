@@ -1,0 +1,358 @@
+/* architecture.css - Professional Technical Specifications */
+
+/* Page Header */
+.page-header {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+    border-radius: 12px;
+    border-left: 4px solid #a855f7;
+    text-align: center;
+}
+
+.header-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #a855f7;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.header-meta span {
+    position: relative;
+}
+
+.header-meta span:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -1.2rem;
+    color: rgba(168, 85, 247, 0.5);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Architecture Overview */
+.architecture-overview {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    text-align: center;
+}
+
+.architecture-overview h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.arch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.arch-item {
+    background: rgba(168, 85, 247, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.arch-item:hover {
+    background: rgba(168, 85, 247, 0.1);
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateY(-2px);
+}
+
+.arch-label {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.arch-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a855f7;
+}
+
+/* Specification Sections */
+.spec-section {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+}
+
+.section-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(168, 85, 247, 0.3);
+    font-family: 'Courier New', monospace;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Specification Content */
+.spec-content {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-subsection {
+    margin-bottom: 3rem;
+}
+
+.spec-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.spec-subsection h3 {
+    font-size: 1.3rem;
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    border-left: 3px solid #a855f7;
+}
+
+/* Specification Tables */
+.spec-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.spec-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spec-table tr:last-child {
+    border-bottom: none;
+}
+
+.spec-table td {
+    padding: 1rem 1.5rem;
+}
+
+.table-label {
+    font-weight: 600;
+    color: #e5e7eb;
+    width: 35%;
+    font-size: 0.95rem;
+}
+
+.table-value {
+    color: #d1d5db;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.feature-item {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    border-color: rgba(168, 85, 247, 0.3);
+    background: rgba(168, 85, 247, 0.05);
+    transform: translateY(-2px);
+}
+
+.feature-title {
+    font-weight: 600;
+    color: #a855f7;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.feature-desc {
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Requirements Container */
+.requirements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.req-column h3 {
+    font-size: 1.3rem;
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    border-left: 3px solid #a855f7;
+}
+
+/* Navigation */
+.navigation {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    padding: 0 2rem;
+}
+
+.navigation .btn {
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .requirements-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1rem;
+    }
+    
+    .architecture-overview {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .arch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .spec-section {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-header {
+        gap: 1rem;
+    }
+    
+    .section-number {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .spec-content {
+        padding: 1.5rem;
+    }
+    
+    .table-label,
+    .table-value {
+        display: block;
+        width: 100%;
+    }
+    
+    .table-label {
+        padding-bottom: 0.3rem;
+    }
+    
+    .table-value {
+        padding-top: 0;
+        color: #a855f7;
+    }
+    
+    .navigation .btn {
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .header-meta span::after {
+        display: none;
+    }
+    
+    .arch-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .spec-content {
+        padding: 1rem;
+    }
+    
+    .spec-table td {
+        padding: 0.8rem 1rem;
+    }
+    
+    .feature-item {
+        padding: 1rem;
+    }
+}
